@@ -1,0 +1,26 @@
+.bundled_item {
+    display: none;
+}
+
+.show-bundled-items .bundled_item {
+    display: table-row;
+}
+
+.bundle-toggle-th {
+    text-align: right !important;
+}
+
+.bundle-toggle-link {
+    font-size: 12px;
+    text-decoration: none;
+    color: #2271b1;
+}
+
+.bundle-toggle-link:hover {
+    color: #135e96;
+}
+
+/* Optional: Add a smooth transition */
+.bundled_item {
+    transition: opacity 0.2s ease-in-out;
+}
