@@ -11,11 +11,13 @@
  
  */
 
+namespace GrowthTeam;
+
 if (!defined('ABSPATH')) {
     exit;
 }
 
-class WC_Bundle_Items_Toggle {
+class GT_Bundle_Items_Toggle {
     
     public function __construct() {
         add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_assets'));
@@ -50,6 +52,6 @@ class WC_Bundle_Items_Toggle {
 // Initialize the plugin
 add_action('plugins_loaded', function() {
     if (class_exists('WooCommerce')) {
-        new WC_Bundle_Items_Toggle();
+        new GT_Bundle_Items_Toggle();
     }
 });
